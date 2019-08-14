@@ -1,0 +1,9 @@
+C:\Users\Administrator\source\repos\Forlaxer\Forlaxer\bin\Release\Forlaxer.dll
+C:\Users\Administrator\source\repos\Forlaxer\Forlaxer\bin\Release\Forlaxer.pdb
+C:\Users\Administrator\source\repos\Forlaxer\Forlaxer\obj\Release\Forlaxer.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\Forlaxer\Forlaxer\obj\Release\Forlaxer.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\Forlaxer\Forlaxer\obj\Release\Forlaxer.dll
+C:\Users\Administrator\source\repos\Forlaxer\Forlaxer\obj\Release\Forlaxer.pdb
+C:\Users\Administrator\source\repos\Forlaxer\Forlaxer\bin\Release\Newtonsoft.Json.dll
+C:\Users\Administrator\source\repos\Forlaxer\Forlaxer\bin\Release\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\Forlaxer\Forlaxer\obj\Release\Forlaxer.csproj.CopyComplete

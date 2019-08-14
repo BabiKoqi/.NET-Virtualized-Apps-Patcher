@@ -1,0 +1,15 @@
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\bin\Release\ForlaxerKoi.exe.config
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\bin\Release\ForlaxerKoi.exe
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\bin\Release\ForlaxerKoi.pdb
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\bin\Release\Colorful.Console.dll
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\bin\Release\dnlib.dll
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\bin\Release\Forlaxer.dll
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\bin\Release\Newtonsoft.Json.dll
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\bin\Release\dnlib.xml
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\bin\Release\Forlaxer.pdb
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\bin\Release\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\obj\Release\ForlaxerKoi.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\obj\Release\ForlaxerKoi.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\obj\Release\ForlaxerKoi.csproj.CopyComplete
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\obj\Release\ForlaxerKoi.exe
+C:\Users\Administrator\source\repos\ForlaxerKoi\ForlaxerKoi\obj\Release\ForlaxerKoi.pdb
