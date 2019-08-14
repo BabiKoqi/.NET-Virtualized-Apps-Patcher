@@ -14,3 +14,6 @@ Tobito Github: https://github.com/TobitoFatitoNulled
 xsilent Github: https://github.com/xsilent007
 
 
+Note: not gonna fix/support it anymore to feel free to clone and edit it as y want
+
+
