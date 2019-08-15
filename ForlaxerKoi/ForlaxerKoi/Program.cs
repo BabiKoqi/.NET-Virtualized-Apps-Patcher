@@ -22,9 +22,8 @@ namespace ForlaxerKoi
             Console.OutputEncoding = Encoding.ASCII;
             var stopwatch = new Stopwatch();
             stopwatch.Start();
-            //string path = args[0];
-            Console.WriteLine("Drag n Drop the Exe: ");
-
+			
+            Console.WriteLine("Drag n Drop the Exe: ");			
             string path = Console.ReadLine();
             try
             {
@@ -130,7 +129,8 @@ namespace ForlaxerKoi
                     dbg("Hooking Forlaxer...");
                     try
                     {
-                        //File.Copy(@"C:\Users\ForlaxPy\source\repos\Forlaxer\Forlaxer\bin\Debug\Forlaxer.dll", fileDir + "\\Forlaxer.dll");
+                        File.Copy("Forlaxer.dll", fileDir + "\\Forlaxer.dll");
+						File.Copy("Newtonsoft.Json.dll", fileDir + "\\Newtonsoft.Json.dll");			
                     }
                     catch { }
                     try
@@ -170,7 +170,8 @@ namespace ForlaxerKoi
             dbg("Hooking Forlaxer...");
             try
             {
-                //File.Copy(@"C:\Users\ForlaxPy\source\repos\Forlaxer\Forlaxer\bin\Debug\Forlaxer.dll", fileDir + "\\Forlaxer.dll");
+                File.Copy("Forlaxer.dll", fileDir + "\\Forlaxer.dll");
+				File.Copy("Newtonsoft.Json.dll", fileDir + "\\Newtonsoft.Json.dll");
             }
             catch { }
             try
@@ -195,7 +196,8 @@ namespace ForlaxerKoi
             dbg("Hooking Forlaxer...");
             try
             {
-                //File.Copy(@"C:\Users\ForlaxPy\source\repos\Forlaxer\Forlaxer\bin\Debug\Forlaxer.dll", fileDir + "\\Forlaxer.dll");
+                File.Copy("Forlaxer.dll", fileDir + "\\Forlaxer.dll");
+				File.Copy("Newtonsoft.Json.dll", fileDir + "\\Newtonsoft.Json.dll");
             }
             catch { }
             try
