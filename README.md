@@ -1,3 +1,5 @@
+Please refer to the updated & original version by Tobito & XSilent007 https://github.com/TobitoFatitoNulled/Venturi77CallHijacker
+
 # .NET-Virtualized-Apps-Patcher
 
 This is a universal Patcher that I coded for Virtualized Applications. Protected by KoiVM/EazVM/AgileVM.
