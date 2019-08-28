@@ -22,9 +22,8 @@ namespace ForlaxerKoi
             Console.OutputEncoding = Encoding.ASCII;
             var stopwatch = new Stopwatch();
             stopwatch.Start();
-            //string path = args[0];
-            Console.WriteLine("Drag n Drop the Exe: ");
-
+			
+            Console.WriteLine("Drag n Drop the Exe: ");			
             string path = Console.ReadLine();
             try
             {
@@ -50,38 +49,68 @@ namespace ForlaxerKoi
                 dbg($"Resolved  '{data.ToString()}'");
             }
             success("Resolved all dependencies");
-            try
-            {
+			Colorful.Console.Write("\n[DEBUG]    ", Color.LightSkyBlue);
+            Colorful.Console.Write("Pick an option [1: Auto Detection |2: Manual Detection] ");
+            stopwatch.Stop();
+            int detection = int.Parse(Console.ReadLine());
+            stopwatch.Start();
+			if (detection == 1)
+			{
+				try
+				{
 
-                if (obf == "Agile.NET")
-                {
-                    info("Detected Agile.NET as Obfuscator");
-                    obf = "AgileVM";
-                    goto Agile;
-                }
-                else if (module.FullName.Contains("вє∂ѕ ρяσтє¢тσя"))
-                {
-                    info("Detected Beds Protector as Obfuscator");
-                    obf = "Beds Protector with KoiVM";
-                }
-                else if (module.Assembly.Modules[0].CustomAttributes[0].AttributeType.ToString().Contains("ConfusedBy") || module.Assembly.Modules[0].CustomAttributes[1].AttributeType.ToString().Contains("ConfusedBy"))
-                {
-                    info("Detected ConfuserEx as Obfuscator");
-                    obf = "ConfuserEX with KoiVM";
-                }
-                else
-                {
-                    info("Detected EazFuscator as Obfuscator");
-                    obf = "EazVM";
-                    goto EAZ;
-                }
-            }
-            catch
-            {
-                info("Detected EazFuscator as Obfuscator");
-                obf = "EazVM";
-                goto EAZ;
-            }
+					if (obf == "Agile.NET")
+					{
+						info("Detected Agile.NET as Obfuscator");
+						obf = "AgileVM";
+						goto Agile;
+					}
+					else if (module.FullName.Contains("вє∂ѕ ρяσтє¢тσя"))
+					{
+						info("Detected Beds Protector as Obfuscator");
+						obf = "Beds Protector with KoiVM";
+					}
+					else if (module.Assembly.Modules[0].CustomAttributes[0].AttributeType.ToString().Contains("ConfusedBy") || module.Assembly.Modules[0].CustomAttributes[1].AttributeType.ToString().Contains("ConfusedBy"))
+					{
+						info("Detected ConfuserEx as Obfuscator");
+						obf = "ConfuserEX with KoiVM";
+					}
+					else
+					{
+						info("Detected EazFuscator as Obfuscator");
+						obf = "EazVM";
+						goto EAZ;
+					}
+				}
+				catch
+				{
+					info("Detected EazFuscator as Obfuscator");
+					obf = "EazVM";
+					goto EAZ;
+				}
+			}
+			else 
+			{
+				Colorful.Console.Write("[DEBUG]    ", Color.LightSkyBlue);
+				Colorful.Console.Write("Pick a virtualizer [1: Koi |2: Eaz |3: Agile] ");
+				stopwatch.Stop();
+				int vmOption = int.Parse(Console.ReadLine());
+				stopwatch.Start();
+				if (vmOption == 1)
+				{
+					obf = "KoiVM";
+				}
+				else if (vmOption == 2)
+				{
+					obf = "EazVM";
+					goto EAZ;
+				}
+				else
+				{
+					obf = "AgileVM";
+					goto Agile;
+				}
+			}
             dbg("Looking for KoiVM data");
             bool isFound = false;
             foreach (var stream in module.Metadata.AllStreams)
@@ -100,7 +129,8 @@ namespace ForlaxerKoi
                     dbg("Hooking Forlaxer...");
                     try
                     {
-                        //File.Copy(@"C:\Users\ForlaxPy\source\repos\Forlaxer\Forlaxer\bin\Debug\Forlaxer.dll", fileDir + "\\Forlaxer.dll");
+                        File.Copy("Forlaxer.dll", fileDir + "\\Forlaxer.dll");
+						File.Copy("Newtonsoft.Json.dll", fileDir + "\\Newtonsoft.Json.dll");			
                     }
                     catch { }
                     try
@@ -140,7 +170,8 @@ namespace ForlaxerKoi
             dbg("Hooking Forlaxer...");
             try
             {
-                //File.Copy(@"C:\Users\ForlaxPy\source\repos\Forlaxer\Forlaxer\bin\Debug\Forlaxer.dll", fileDir + "\\Forlaxer.dll");
+                File.Copy("Forlaxer.dll", fileDir + "\\Forlaxer.dll");
+				File.Copy("Newtonsoft.Json.dll", fileDir + "\\Newtonsoft.Json.dll");
             }
             catch { }
             try
@@ -165,7 +196,8 @@ namespace ForlaxerKoi
             dbg("Hooking Forlaxer...");
             try
             {
-                //File.Copy(@"C:\Users\ForlaxPy\source\repos\Forlaxer\Forlaxer\bin\Debug\Forlaxer.dll", fileDir + "\\Forlaxer.dll");
+                File.Copy("Forlaxer.dll", fileDir + "\\Forlaxer.dll");
+				File.Copy("Newtonsoft.Json.dll", fileDir + "\\Newtonsoft.Json.dll");
             }
             catch { }
             try
